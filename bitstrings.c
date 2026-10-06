@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
   char a2 = 0b00111000;
   char b2 = 0b01100001;
   char c2 = 0b00100000;
-  assert((a2 >> b2) == c2);
+  assert((a2 & b2) == c2);
 
   char a3 = 0b01010101;
   char b3 = 0b10101111;
@@ -33,6 +33,6 @@ int main(int argc, char *argv[]) {
   char a6 = 0b00001010;
   char b6 = 0b00000011;  
   char c6 = 0b01010000;
-  assert((a6 << b6) == c6);
+  assert((a6 << 3) == c6);
   
 }
