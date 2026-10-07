@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
 
   char a6 = 0b00001010;
   char b6 = 0b00000011;  
-  char c6 = 0b01010000;
-  assert((a6 << b6) == c6);
+  char c6 = 0b01010001;
+  assert(((a6 << 3) | ((a6 & b6) >> 1)) == c6);
   
 }
